@@ -82,19 +82,23 @@ public class MainActivity extends AppCompatActivity {
                 switch (islem){
                     case "+":
                         sonuc=sayi1+sayi2;
+                        islemAdi.setText(sayi1+"+"+sayi2);
                         break;
                     case "-":
                         sonuc=sayi1-sayi2;
+                        islemAdi.setText(sayi1+"-"+sayi2);
                         break;
                     case "*":
                         sonuc=sayi1*sayi2;
+                        islemAdi.setText(sayi1+"*"+sayi2);
                         break;
                     case "/":
                         sonuc=sayi1/sayi2;
+                        islemAdi.setText(sayi1+"/"+sayi2);
                         break;
                 }
                 text.setText(""+sonuc);
-                islemAdi.setText("İşlem Yapmaya Devam Etmek için yeni bir sembol Seçiniz");
+                //islemAdi.setText("İşlem Yapmaya Devam Etmek için yeni bir sembol Seçiniz");
             }
         });
     }
